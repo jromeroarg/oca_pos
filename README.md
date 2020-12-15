@@ -16,7 +16,7 @@ addon | version | summary
 [pos_accented_search](pos_accented_search/) | 12.0.1.0.1 | Point of Sale - Product search works regardless of accented characters
 [pos_access_right](pos_access_right/) | 12.0.1.0.1 | Point of Sale - Extra Access Right for certain actions
 [pos_cash_move_reason](pos_cash_move_reason/) | 12.0.3.0.2 | POS cash in-out reason
-[pos_customer_display](pos_customer_display/) | 12.0.1.0.2 | Manage LED Customer Display device from POS front end
+[pos_customer_display](pos_customer_display/) | 12.0.1.0.3 | Manage LED Customer Display device from POS front end
 [pos_customer_required](pos_customer_required/) | 12.0.1.0.1 | Point of Sale Require Customer
 [pos_default_empty_image](pos_default_empty_image/) | 12.0.1.1.0 | Optimize loading time for products without image
 [pos_default_partner](pos_default_partner/) | 12.0.1.0.1 | Add a default customer in pos order
@@ -29,8 +29,9 @@ addon | version | summary
 [pos_invoicing](pos_invoicing/) | 12.0.3.0.0 | Handle invoicing from Point Of Sale
 [pos_journal_image](pos_journal_image/) | 12.0.1.0.0 | Add images on Account Journals available in the PoS
 [pos_margin](pos_margin/) | 12.0.1.0.0 | Margin on PoS Order
+[pos_meal_voucher](pos_meal_voucher/) | 12.0.1.0.2 | Handle meal vouchers in Point of Sale with eligible amount and max amount
 [pos_multi_ean](pos_multi_ean/) | 12.0.1.0.1 | Search products by multiple EAN
-[pos_multiple_control](pos_multiple_control/) | 12.0.1.0.1 | Allow user to control each statement and add extra checks
+[pos_multiple_control](pos_multiple_control/) | 12.0.1.0.2 | Allow user to control each statement and add extra checks
 [pos_order_mgmt](pos_order_mgmt/) | 12.0.1.1.3 | Manage old POS Orders from the frontend
 [pos_order_remove_line](pos_order_remove_line/) | 12.0.1.0.0 | Add button to remove POS order line.
 [pos_order_return](pos_order_return/) | 12.0.1.0.3 | Point of Sale Order Return
@@ -38,12 +39,13 @@ addon | version | summary
 [pos_order_to_sale_order](pos_order_to_sale_order/) | 12.0.1.0.2 | PoS Order To Sale Order
 [pos_partner_firstname](pos_partner_firstname/) | 12.0.1.1.0 | POS Support of partner firstname
 [pos_payment_change](pos_payment_change/) | 12.0.1.0.2 | Allow cashier to change order payments, as long as the session is not closed.
-[pos_payment_terminal](pos_payment_terminal/) | 12.0.0.1.1 | Manage Payment Terminal device from POS front end
-[pos_picking_delayed](pos_picking_delayed/) | 12.0.1.0.2 | Delay the creation of the picking when PoS order is created
+[pos_payment_terminal](pos_payment_terminal/) | 12.0.0.1.3 | Manage Payment Terminal device from POS front end
+[pos_picking_delayed](pos_picking_delayed/) | 12.0.1.0.3 | Delay the creation of the picking when PoS order is created
 [pos_picking_load](pos_picking_load/) | 12.0.1.0.2 | Load and confirm stock pickings via Point Of Sale
 [pos_picking_load_partner_name](pos_picking_load_partner_name/) | 12.0.1.0.1 | Improve load of picking in PoS by partner name
 [pos_place](pos_place/) | 12.0.1.0.1 | Define places on PoS orders
 [pos_price_to_weight](pos_price_to_weight/) | 12.0.2.0.0 | Compute weight based on barcodes with prices
+[pos_product_sort](pos_product_sort/) | 12.0.1.0.1 | sort the products by name in the point of sale instead of sorting them by the sequence field.
 [pos_quick_logout](pos_quick_logout/) | 12.0.1.0.0 | Allow PoS user to logout quickly after user changed
 [pos_report_order_payment](pos_report_order_payment/) | 12.0.1.0.0 | Analyze point of sale payments
 [pos_report_session_summary](pos_report_session_summary/) | 12.0.1.0.0 | Adds a Session Summary PDF report on the POS session
@@ -54,7 +56,7 @@ addon | version | summary
 [pos_stock_picking_invoice_link](pos_stock_picking_invoice_link/) | 12.0.1.0.0 | POS Stock Picking Invoice Link
 [pos_supplierinfo_barcode](pos_supplierinfo_barcode/) | 12.0.1.0.0 | Search products by supplier barcode
 [pos_supplierinfo_search](pos_supplierinfo_search/) | 12.0.1.0.1 | Search products by supplier data
-[pos_tare](pos_tare/) | 12.0.1.0.1 | Manage Tare in Point Of Sale module
+[pos_tare](pos_tare/) | 12.0.1.0.2 | Manage Tare in Point Of Sale module
 [pos_ticket_logo](pos_ticket_logo/) | 12.0.1.0.0 | Pos Ticket Logo
 [pos_ticket_salesman_firstname](pos_ticket_salesman_firstname/) | 12.0.1.0.0 | Pos Ticket Salesman Firstname
 [pos_ticket_without_price](pos_ticket_without_price/) | 12.0.1.0.0 | Adds receipt ticket without price or taxes
