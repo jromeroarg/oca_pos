@@ -18,30 +18,10 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:29
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:31
 #, python-format
 msgid "(Dematerialized)"
 msgstr "(Dématérialisé)"
-
-#. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:143
-#, python-format
-msgid ", when the maximum amount is "
-msgstr ", alors que le montant maximum est de "
-
-#. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:145
-#, python-format
-msgid ""
-".\n"
-"\n"
-" Clicking 'Confirm' will validate the payment."
-msgstr ""
-".\n"
-"\n"
-" Cliquer sur 'confirmer' validera le paiement."
 
 #. module: pos_meal_voucher
 #: model_terms:ir.ui.view,arch_db:pos_meal_voucher.view_pos_config_form
@@ -107,6 +87,11 @@ msgid "Food"
 msgstr "Alimentaire"
 
 #. module: pos_meal_voucher
+#: model:ir.model.fields,field_description:pos_meal_voucher.field_pos_config__has_meal_voucher_journal
+msgid "Has Meal Voucher Journal"
+msgstr ""
+
+#. module: pos_meal_voucher
 #: model_terms:ir.ui.view,arch_db:pos_meal_voucher.view_pos_config_form
 msgid ""
 "If checked, an icon will be displayed on the screen, before each product "
@@ -141,7 +126,7 @@ msgstr "Lot"
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:52
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:55
 #, python-format
 msgid "Max Amount"
 msgstr "Montant maximum"
@@ -160,7 +145,7 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:39
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:42
 #: model:ir.model.fields,field_description:pos_meal_voucher.field_product_category__meal_voucher_ok
 #: model:ir.model.fields,field_description:pos_meal_voucher.field_product_product__meal_voucher_ok
 #: model:ir.model.fields,field_description:pos_meal_voucher.field_product_template__meal_voucher_ok
@@ -186,7 +171,7 @@ msgstr "Type de titre restaurant"
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:16
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:17
 #, python-format
 msgid "Meal Voucher:"
 msgstr "Titre restaurant :"
@@ -213,13 +198,6 @@ msgid "Paper"
 msgstr "Papier"
 
 #. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:140
-#, python-format
-msgid "Please Confirm Meal Voucher Amount"
-msgstr "Veuillez confirmer le montant en titre restaurant"
-
-#. module: pos_meal_voucher
 #: model:ir.model,name:pos_meal_voucher.model_pos_config
 msgid "Point of Sale Configuration"
 msgstr "Paramétrage du point de vente"
@@ -239,6 +217,11 @@ msgstr "Article à prix fixe"
 #, fuzzy
 msgid "Priced Product (Computed Weight)"
 msgstr "Article à prix fixe"
+
+#. module: pos_meal_voucher
+#: model:ir.model,name:pos_meal_voucher.model_product_product
+msgid "Product"
+msgstr ""
 
 #. module: pos_meal_voucher
 #: model:ir.model,name:pos_meal_voucher.model_product_category
@@ -275,14 +258,14 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:44
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:47
 #, python-format
 msgid "Total Eligible"
 msgstr "Total éligible"
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:60
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:63
 #, python-format
 msgid "Total Received"
 msgstr "Total encaissé"
@@ -309,15 +292,6 @@ msgid "Weighted Product"
 msgstr "Article pesé"
 
 #. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:141
-#, python-format
-msgid "You are about to validate a meal voucher payment of "
-msgstr ""
-"Vous êtes sur le point de valider un paiement en titre restaurant d'un "
-"montant de "
-
-#. module: pos_meal_voucher
 #: model_terms:ir.ui.view,arch_db:pos_meal_voucher.view_product_category
 msgid ""
 "by clicking on this button, all the products of this category will have the "
@@ -331,3 +305,23 @@ msgstr ""
 #: model:product.template,weight_uom_name:pos_meal_voucher.bread_product_template
 msgid "kg"
 msgstr "kg"
+
+#~ msgid ", when the maximum amount is "
+#~ msgstr ", alors que le montant maximum est de "
+
+#~ msgid ""
+#~ ".\n"
+#~ "\n"
+#~ " Clicking 'Confirm' will validate the payment."
+#~ msgstr ""
+#~ ".\n"
+#~ "\n"
+#~ " Cliquer sur 'confirmer' validera le paiement."
+
+#~ msgid "Please Confirm Meal Voucher Amount"
+#~ msgstr "Veuillez confirmer le montant en titre restaurant"
+
+#~ msgid "You are about to validate a meal voucher payment of "
+#~ msgstr ""
+#~ "Vous êtes sur le point de valider un paiement en titre restaurant d'un "
+#~ "montant de "

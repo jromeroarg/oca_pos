@@ -15,25 +15,9 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:29
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:31
 #, python-format
 msgid "(Dematerialized)"
-msgstr ""
-
-#. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:143
-#, python-format
-msgid ", when the maximum amount is "
-msgstr ""
-
-#. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:145
-#, python-format
-msgid ".\n"
-"\n"
-" Clicking 'Confirm' will validate the payment."
 msgstr ""
 
 #. module: pos_meal_voucher
@@ -99,6 +83,11 @@ msgid "Food"
 msgstr ""
 
 #. module: pos_meal_voucher
+#: model:ir.model.fields,field_description:pos_meal_voucher.field_pos_config__has_meal_voucher_journal
+msgid "Has Meal Voucher Journal"
+msgstr ""
+
+#. module: pos_meal_voucher
 #: model_terms:ir.ui.view,arch_db:pos_meal_voucher.view_pos_config_form
 msgid "If checked, an icon will be displayed on the screen, before each product that can be paid with meal vouchers."
 msgstr ""
@@ -125,7 +114,7 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:52
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:55
 #, python-format
 msgid "Max Amount"
 msgstr ""
@@ -138,7 +127,7 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:39
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:42
 #: model:ir.model.fields,field_description:pos_meal_voucher.field_product_category__meal_voucher_ok
 #: model:ir.model.fields,field_description:pos_meal_voucher.field_product_product__meal_voucher_ok
 #: model:ir.model.fields,field_description:pos_meal_voucher.field_product_template__meal_voucher_ok
@@ -164,7 +153,7 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:16
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:17
 #, python-format
 msgid "Meal Voucher:"
 msgstr ""
@@ -191,13 +180,6 @@ msgid "Paper"
 msgstr ""
 
 #. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:140
-#, python-format
-msgid "Please Confirm Meal Voucher Amount"
-msgstr ""
-
-#. module: pos_meal_voucher
 #: model:ir.model,name:pos_meal_voucher.model_pos_config
 msgid "Point of Sale Configuration"
 msgstr ""
@@ -215,6 +197,11 @@ msgstr ""
 #. module: pos_meal_voucher
 #: selection:barcode.rule,type:0
 msgid "Priced Product (Computed Weight)"
+msgstr ""
+
+#. module: pos_meal_voucher
+#: model:ir.model,name:pos_meal_voucher.model_product_product
+msgid "Product"
 msgstr ""
 
 #. module: pos_meal_voucher
@@ -246,14 +233,14 @@ msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:44
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:47
 #, python-format
 msgid "Total Eligible"
 msgstr ""
 
 #. module: pos_meal_voucher
 #. openerp-web
-#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:60
+#: code:addons/pos_meal_voucher/static/src/xml/pos_meal_voucher.xml:63
 #, python-format
 msgid "Total Received"
 msgstr ""
@@ -277,13 +264,6 @@ msgstr ""
 #. module: pos_meal_voucher
 #: selection:barcode.rule,type:0
 msgid "Weighted Product"
-msgstr ""
-
-#. module: pos_meal_voucher
-#. openerp-web
-#: code:addons/pos_meal_voucher/static/src/js/screens.js:141
-#, python-format
-msgid "You are about to validate a meal voucher payment of "
 msgstr ""
 
 #. module: pos_meal_voucher

@@ -53,7 +53,7 @@ odoo.define("pos_meal_voucher.screens", function (require) {
         update_summary: function () {
             this._super.apply(this, arguments);
             var order = this.pos.get_order();
-            if (!order.get_orderlines().length) {
+            if (!order.get_orderlines().length || !this.pos.config.has_meal_voucher_journal) {
                 return;
             }
             this.el.querySelector(".summary .meal-voucher .value").textContent = this.format_currency(order.get_total_meal_voucher_eligible());
@@ -93,7 +93,7 @@ odoo.define("pos_meal_voucher.screens", function (require) {
 
             this._super.apply(this, arguments);
             var order = this.pos.get_order();
-            if (!order) {
+            if (!order || !this.pos.config.has_meal_voucher_journal) {
                 return;
             }
             // Update meal voucher summary
@@ -121,38 +121,6 @@ odoo.define("pos_meal_voucher.screens", function (require) {
 
         },
 
-        order_is_valid: function(force_validation) {
-            var self = this;
-            var order = this.pos.get_order();
-
-            var total_eligible = order.get_total_meal_voucher_eligible();
-            var total_received = order.get_total_meal_voucher_received();
-            var max_amount = this.pos.config.max_meal_voucher_amount;
-
-            var current_max = total_eligible;
-            if (max_amount) {
-                current_max = Math.min(total_eligible, max_amount);
-            }
-
-            // if the change is too large, it's probably an input error, make the user confirm.
-            if (!force_validation && (total_received > current_max)) {
-                this.gui.show_popup("confirm", {
-                    title: _t("Please Confirm Meal Voucher Amount"),
-                    body:  _t("You are about to validate a meal voucher payment of ") +
-                           this.format_currency(total_received) +
-                           _t(", when the maximum amount is ") +
-                           this.format_currency(current_max) +
-                           _t(".\n\n Clicking 'Confirm' will validate the payment."),
-                    confirm: function() {
-                        // Note: Due to the bad design of the original function
-                        // the check "Large Amount" will be skipped in that case.
-                        self.validate_order("confirm");
-                    },
-                });
-                return false;
-            }
-            return this._super.apply(this, arguments);;
-        },
     });
 
 });
