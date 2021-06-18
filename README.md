@@ -26,10 +26,11 @@ addon | version | summary
 [pos_fix_search_limit](pos_fix_search_limit/) | 12.0.1.0.0 | Increase search in the PoS
 [pos_fixed_discount](pos_fixed_discount/) | 12.0.1.0.1 | Allow to apply discounts with fixed amount
 [pos_hide_banknote_button](pos_hide_banknote_button/) | 12.0.1.0.0 | Hide useless Banknote buttons in the PoS (+10, +20, +50)
+[pos_hide_empty_category](pos_hide_empty_category/) | 12.0.1.0.1 | Hide PoS categories that doesn't have any products
 [pos_invoice_send_mail](pos_invoice_send_mail/) | 12.0.1.0.0 | Send invoices by email from the POS
 [pos_invoicing](pos_invoicing/) | 12.0.3.0.1 | Handle invoicing from Point Of Sale
 [pos_journal_image](pos_journal_image/) | 12.0.1.0.0 | Add images on Account Journals available in the PoS
-[pos_margin](pos_margin/) | 12.0.1.0.0 | Margin on PoS Order
+[pos_margin](pos_margin/) | 12.0.2.0.0 | Margin on PoS Order
 [pos_meal_voucher](pos_meal_voucher/) | 12.0.1.0.5 | Handle meal vouchers in Point of Sale with eligible amount and max amount
 [pos_multi_ean](pos_multi_ean/) | 12.0.1.0.1 | Search products by multiple EAN
 [pos_multiple_control](pos_multiple_control/) | 12.0.1.2.0 | Allow user to control each statement and add extra checks
@@ -60,7 +61,7 @@ addon | version | summary
 [pos_stock_picking_invoice_link](pos_stock_picking_invoice_link/) | 12.0.1.0.0 | POS Stock Picking Invoice Link
 [pos_supplierinfo_barcode](pos_supplierinfo_barcode/) | 12.0.1.0.0 | Search products by supplier barcode
 [pos_supplierinfo_search](pos_supplierinfo_search/) | 12.0.1.0.1 | Search products by supplier data
-[pos_tare](pos_tare/) | 12.0.1.0.2 | Manage Tare in Point Of Sale module
+[pos_tare](pos_tare/) | 12.0.1.0.3 | Manage Tare in Point Of Sale module
 [pos_ticket_logo](pos_ticket_logo/) | 12.0.1.0.0 | Pos Ticket Logo
 [pos_ticket_salesman_firstname](pos_ticket_salesman_firstname/) | 12.0.1.0.0 | Pos Ticket Salesman Firstname
 [pos_ticket_without_price](pos_ticket_without_price/) | 12.0.1.0.0 | Adds receipt ticket without price or taxes
